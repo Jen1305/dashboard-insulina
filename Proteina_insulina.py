@@ -57,7 +57,6 @@ st.write("""
 - [Estructura en el PDB](https://www.rcsb.org/structure/1ZNJ)
 - [Simulaciones Metabólicas en KEGG](https://www.genome.jp/kegg/)
 """)
-git init
 git add dashboard_insulina.py
 git commit -m "Primera versión del dashboard"
 git branch -M main
