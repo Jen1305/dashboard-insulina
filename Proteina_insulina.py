@@ -2,7 +2,6 @@
 import streamlit as st
 import py3Dmol
 from Bio.SeqUtils import molecular_weight
-python Proteina_insulina.py
 
 # Prueba calcular el peso molecular
 try:
