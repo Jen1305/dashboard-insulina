@@ -34,6 +34,7 @@ st.write(f"*Secuencia Completa:*\n{secuencia}")
 
 # Estructura 3D Interactiva
 st.header("Estructura 3D de la Insulina")
+imagen_url = https://github.com/Jen1305/dashboard-insulina/blob/main/Insulina.png
 import streamlit.components.v1 as components
 
 def render_molecule():
