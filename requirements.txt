@@ -1,3 +1,4 @@
 streamlit
 py3Dmol
 biopython
+streamlit run Proteina_insulina.py
