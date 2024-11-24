@@ -1,7 +1,18 @@
 # Archivo: dashboard_insulina.py
 import streamlit as st
 import py3Dmol
+pip install biopython
+pip install --upgrade biopython
 from Bio.SeqUtils import molecular_weight
+from Bio.SeqUtils import molecular_weight
+
+# Prueba calcular el peso molecular
+try:
+    peso = molecular_weight("GIVEQCCTSICSLYQLENYCNFVNQHLCGSHLVEALYLVCGERGFFYTPKT", seq_type="protein")
+    print(f"Peso molecular calculado: {peso} Da")
+except Exception as e:
+    print(f"Error: {e}")
+
 
 # Título
 st.title("Dashboard Interactivo: Proteína Insulina")
