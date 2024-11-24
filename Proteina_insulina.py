@@ -51,8 +51,7 @@ def render_molecule():
     # Renderiza como HTML
     mol_html = viewer._make_html()
     components.html(mol_html, height=400, width=800)
-st.header("Estructura 3D de la Insulina")
-render_molecule()
+
 
 
 # Rutas Metabólicas
