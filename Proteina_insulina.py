@@ -70,6 +70,6 @@ st.write("""
 - [Estructura en el PDB](https://www.rcsb.org/structure/1ZNJ)
 - [Simulaciones Metabólicas en KEGG](https://www.genome.jp/kegg/)
 """)
-streamlit run Proteina_insulina.py
+
 
 
