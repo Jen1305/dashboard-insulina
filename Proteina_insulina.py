@@ -35,6 +35,7 @@ st.write(f"*Secuencia Completa:*\n{secuencia}")
 
 # Estructura 3D Interactiva
 st.header("Estructura 3D de la Insulina")
+import streamlit.components.v1 as components
 
 def render_molecule():
     pdb_data = """
@@ -47,8 +48,12 @@ def render_molecule():
     viewer.addModel(pdb_data, "pdb")
     viewer.setStyle({"stick": {}})
     viewer.zoomTo()
-    return viewer.show()
+    # Renderiza como HTML
+    mol_html = viewer._make_html()
+    components.html(mol_html, height=400, width=800)
+st.header("Estructura 3D de la Insulina")
 render_molecule()
+
 
 # Rutas Metabólicas
 st.header("Participación en Rutas Metabólicas")
@@ -66,5 +71,6 @@ st.write("""
 - [Estructura en el PDB](https://www.rcsb.org/structure/1ZNJ)
 - [Simulaciones Metabólicas en KEGG](https://www.genome.jp/kegg/)
 """)
+streamlit run Proteina_insulina.py
 
 
